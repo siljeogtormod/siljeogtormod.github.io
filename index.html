@@ -66,6 +66,12 @@
 		#Hotellet {
 			background-image: url("hotellparken.jpg");
 		}
+		.blom {
+			background-image: url("blom_hjorne_gjen.png");
+			background-repeat: no-repeat;
+			background-size: auto 35%;
+			background-position: 100% 100%;
+		}
 		#RSVP {
 			background-image: url("oss_kjem.JPEG");
 		}
@@ -101,7 +107,7 @@
 			transition: transform .2s; /* Animation */
 			position: relative;
 			top: 20vh;
-			left: 20vw;
+			left: 10vw;
 		}
 		#sol:hover {
 			transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -177,14 +183,15 @@
 			display: block;
 			text-decoration: none;
 			padding: 10px;
-			color: black;
+			/* color: black; */
+			color: #663300;
 			/* border-bottom: 1px solid #444; */
 		}
 		nav a:hover {
-			background-color: #444;
-			border-radius: 10px;
-			/* text-decoration: underline; */
-			/* text-decoration-color: red; */
+			/* background-color: #444; */
+			/* border-radius: 10px; */
+			text-decoration: underline;
+			text-decoration-color: #663300;
 		}
 		a {
 			color: inherit;
@@ -201,10 +208,10 @@
 	<a href="#Festen">Festen</a>
 	<a href="#Hotellet">Hotellet</a>
 	<a href="#Program">Program</a>
-	<!-- <a href="#Gaver">Gåver</a> -->
 	<a href="#Praktisk">Reise</a>
-	<a href="#Kart">Kart</a>
+	<!-- <a href="#Kart">Kart</a> -->
 	<a href="#RSVP">RSVP</a>
+	<a href="#Gaver">Gåver</a>
 </nav>
 
 <section id="Velkommen" class="full-width">
@@ -243,8 +250,6 @@
 		<h2>Program</h2>
 
 		<h3>Fredag</h3>
-		<p>Mini swingkurs?</p>
-		<p></p>
 		<p>18:30-21:00 er det mulig å få seg ein middag i hotellets restaurant</p>
 
 		<h3>Laurdag</h3>
@@ -258,7 +263,7 @@
 		<h3>Sundag</h3>
 		<p>08:00-10:00 Frukost</p>
 		<p>12:00 Utsjekk</p>
-		<p>Tur/Yoga?</p>
+		<p>Soft Yoga?</p>
 
 		<h3>Bidrag</h3>
 		<p>Ynkje om å halde taler el. må rettast i god tid til toasmaster ..., tlf: ...</p>
@@ -266,15 +271,6 @@
 
 </section>
 
-
-<section id="Gaver" class="full-width">
-	<div class="blue">
-		<h2>Gåver</h2>
-		<p>Det viktigaste for oss er at <i>du</i> kjem!</p>
-		<p>Evt. gåveliste kjem seinare</p>
-	</div>
-	 <img id="sol" src="oss_solnedgang_kvadrat_2.jpeg" alt="Oss">
-</section>
 
 <section id="Praktisk" class="full-width">
 	<div class="blue">
@@ -293,16 +289,17 @@
 	</div>
 </section>
 
-<section id="Kart" class="full-width">
+<section id="Kart" class="full-width blom">
 	<div class="blue">
-		<h2>Veibeskrivelse</h2>
-		<p>Kirka: <a href="https://maps.app.goo.gl/1tpEmHe7ArLRESQN7">Google maps link</a>. Obs! Det er fleire kyrkjer med navn "Haug", dette er den riktige</p>
+		<h2>Vegbeskrivning</h2>
+		<p>Kykja: <a href="https://maps.app.goo.gl/1tpEmHe7ArLRESQN7">Google maps link</a>. Obs! Det er fleire kyrkjer med navn "Haug", dette er den riktige</p>
 		<p>Hotellet: <a href="https://maps.app.goo.gl/WYEkEoEwpp7YahCG9">Goole maps link</a></p>
 		<h3>Vielse til fest</h3>
 		<p>...kart kjem...</p>
 		<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YmqRsPox2KJhpVCITSsWpBGRyVcNvc0&ehbc=2E312F&noprof=1"></iframe> -->
 	</div>
 </section>
+
 
 <section id="RSVP" class="full-width">
 	<div class="blue">
@@ -312,6 +309,16 @@
 		<p>Frist: 1. mai 2025</p>
 	</div>
 </section>
+
+<section id="Gaver" class="full-width blom">
+	<div class="blue">
+		<h2>Gåver</h2>
+		<p>Det viktigaste for oss er at <i>du</i> kjem!</p>
+		<p>Evt. gåveliste kjem seinare</p>
+	</div>
+	 <img id="sol" src="oss_solnedgang_kvadrat_2.jpeg" alt="Oss">
+</section>
+
 
 </body>
 </html>
