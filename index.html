@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Silje <3 Tormod</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link href="https://fonts.cdnfonts.com/css/lucida-handwriting-std" rel="stylesheet"> -->
+	<link href="https://fonts.cdnfonts.com/css/lucida-handwriting-std?styles=66092" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+	<style>
+		* {
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		}
+		.full-width {
+			height: 100vh; /* You must set a specified height */
+			background-position: center; /* Center the image */
+			background-repeat: no-repeat; /* Do not repeat the image */
+			background-size: cover; /* Resize the background image to cover the entire container */
+			overflow: hidden;
+		}
+		#oss {
+			/* position: absolute; */
+			z-index: 0;
+			box-sizing: border-box;
+			/* padding: 0 50% 0 0; */
+			/* top: 0px; */
+			/* left: 0%; */
+			float: right;
+			/* transform: translateX(-50%); */
+			background-image: url("oss_runde.jpg");
+			display: inline-block;
+			/* width: 800px; */
+			min-width: 50vw;
+			height: 100vh;
+			/* padding-right: 100px; */
+			background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		}
+		#navn {
+			margin-top: 2em;
+		}
+		#Velkommen {
+			background-image: url("blom_hjorne_gjen.png");
+			background-repeat: no-repeat;
+			background-size: 35%;
+			background-position: 100% 100%;
+			/* background-image: url("oss_runde.jpg"); */
+
+			/* background-size: 50hv auto !important; */
+			/* background-size: contain; */
+
+		}
+		#Program {
+			background-image: url("digra_2etg.jpg");
+		}
+		#Festen {
+			background-image: url("digra_lave.jpg");
+		}
+		#Hotellet {
+			background-image: url("hotellparken.jpg");
+		}
+		#RSVP {
+			background-image: url("oss_kjem.jpeg");
+		}
+		#Praktisk {
+			background-image: url("innebasseng.jpg");
+		}
+		#tittel {
+			position: absolute;
+			z-index: 50;
+			background-image: url("hjerte.png");
+			background-size: 100%;
+			height: 25em;
+			width: 25em;
+			top: 18vh;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		#tittel_block {
+			/* position: absolute; */
+			/* z-index: 50; */
+			float: right;
+			/* background-color: red; */
+			width: 50vw;
+			min-width: 500px;
+			height: 100vh;
+			/* top: 0; */
+			/* left: 50%; */
+			/* transform: translateX(-50%); */
+		}
+		#sol {
+			border-radius: 50%;
+			width: 40vh;
+			transition: transform .2s; /* Animation */
+			position: relative;
+			top: 20vh;
+			left: 20vw;
+		}
+		#sol:hover {
+			transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+		}
+		#blom {
+			position: absolute;
+			top: 12vh;
+			left: 18vw;
+			background-image: url("blom.svg");
+			background-position: 60vh -60vh;
+			/* background-position: 10px 0px; */
+			background-repeat: no-repeat;
+			/* background-color: blue; */
+			/* z-index: 10; */
+			width: 120vh;
+			height: 120vh;
+			/* clip: rect(0, 100px, 200px, 0); */
+		}
+		.blue {
+			margin: 5% 0 5% 10%;
+			padding: 30px;
+			background-color: rgba(255, 255, 255, 0.8);
+			display: inline-block;
+			border-radius: 10px;
+
+			/* hight: 100%; */
+		}
+		html {
+			background-color: #F6EEE3;
+		}
+		.center {
+			text-align: center;
+		}
+		h1 {
+			/* font-family: 'Lucida Handwriting Std', sans-serif; */
+			font-family: 'Allura', sans-serif;
+			color: black;
+			font-size: 3em;
+			color: #663300;
+			/* margin: 10% 0 0 0; */
+		}
+		h2, h3, p, a, ul {
+			font-family: 'Bad Script', sans-serif;
+			color: #663300;
+		}
+		h3 {
+			margin: 1em 0 0 0;
+		}
+		p {
+			margin: 1em;
+			color: black;
+		}
+		li {
+			margin: 0 0 0 2em;
+		}
+		ul {
+			margin: 1em;
+		}
+		nav {
+			position: fixed;
+			z-index: 100;
+			top: 10px;
+			left: 50%;
+			display: flex;
+			transform: translateX(-50%);
+			/* with: 200px; */
+			background-color: rgba(255, 255, 255, 0.8);
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+			/* height: 100vh; */
+		}
+		nav a {
+			display: block;
+			text-decoration: none;
+			padding: 10px;
+			color: black;
+			/* border-bottom: 1px solid #444; */
+		}
+		nav a:hover {
+			background-color: #444;
+			border-radius: 10px;
+			/* text-decoration: underline; */
+			/* text-decoration-color: red; */
+		}
+		a {
+			color: inherit;
+		}
+		ul {
+			list-style-type: square;
+		}
+
+	</style
+</head>
+<body>
+
+<nav>
+	<a href="#Festen">Festen</a>
+	<a href="#Hotellet">Hotellet</a>
+	<a href="#Program">Program</a>
+	<a href="#Gaver">Gåver</a>
+	<a href="#Reise">Reise</a>
+	<a href="#Kart">Kart</a>
+	<a href="#RSVP">RSVP</a>
+</nav>
+
+<section id="Velkommen" class="full-width">
+	<div id="tittel">
+		<h1 id="navn" class="center">Silje & Tormod</h1>
+		<h3 class="center">6/9-25</h3>
+	</div>
+	<div id="tittel_block"></div>
+	 <!-- <img id="sol" src="gold_ring.png" alt="Oss"> -->
+	 <!-- <div id="blom"></div> -->
+	<div id="oss"></div>
+</section>
+
+<section id="Festen" class="full-width">
+	<div class="blue">
+		<h2>Digra gård</h2>
+		<p>Dette er eit gamalt tun der festen skal vere.</p>
+		<p>Låven er restaurert til bryllaupslokale med bordsetting i 2. etasje.</p>
+	</div>
+</section>
+
+<section id="Hotellet" class="full-width">
+	<div class="blue">
+		<h2>Klækken hotell</h2>
+		<p><a href="https://www.klaekken.no/">Klækken hotell</a> ligger rett ved Digra gård der festen skal vere.</p>
+		<p>Hotellet har store utearealer med grøntområder, samt inne- og utebasseng. Så her må ein hugse badebuksa!</p>
+
+		<p>Det er statuer, stort sjakkbrett og ei lita fotballbane.</p>
+
+		<p>Les meir om historia til hotellet <a href="https://www.klaekken.no/hotellet/klekkens-historie">her</a>.</p>
+	</div>
+</section>
+
+<section id="Program" class="full-width">
+	<div class="blue">
+		<h2>Program</h2>
+
+		<h3>Fredag</h3>
+		<p>Mini swingkurs?</p>
+		<p></p>
+		<p>18:30-21:00 er det mulig å få seg ein middag i hotellets restaurant</p>
+
+		<h3>Laurdag</h3>
+		<p>12:30 Felles avgang frå hotellet</p>
+		<p>13:00 Vielse</p>
+		<p>14:30 Aperetiff</p>
+		<p>15:00 Innsjekk for hotellgjester (rommet kan vere klart tidlegare)</p>
+		<p>16:00 Middag</p>
+		<p>21:00 Konsert, kaffi, kaker og fest!</p>
+
+		<h3>Sundag</h3>
+		<p>08:00-10:00 Frukost</p>
+		<p>12:00 Utsjekk</p>
+		<p>Tur/Yoga?</p>
+
+		<h3>Bidrag</h3>
+		<p>Ynkje om å halde taler el. må rettast i god tid til toasmaster ..., tlf: ...</p>
+	</div>
+
+</section>
+
+
+<section id="Gaver" class="full-width">
+	<div class="blue">
+		<h2>Gåver</h2>
+		<p>Det viktigaste for oss er at <i>du</i> kjem!</p>
+		<p>Evt. gåveliste kjem seinare</p>
+	</div>
+	 <img id="sol" src="oss_solnedgang_kvadrat.jpeg" alt="Oss">
+</section>
+
+<section id="Praktisk" class="full-width">
+	<div class="blue">
+		<h2>Reise</h2>
+		<p>Hotellet ligg 10 minutt unna Hønefoss sentrum og jernbanestasjon.</p>
+		<p>Hønefoss ligg ca 1 time ifrå Oslo og tilsvarande langt ifrå Gardermoen.</p>
+
+		<h2>Pakkeliste</h2>
+		<ul>
+			<li>Badetøy</li>
+			<li>Gode sko til dans</li>
+		</ul>
+		<p>Antrekk: Kjole og dress. Gjerne bunad</p>
+
+		<p>Kirka ligg 15 min gange unna hotellet.</p>
+	</div>
+</section>
+
+<section id="Kart" class="full-width">
+	<div class="blue">
+		<h2>Veibeskrivelse</h2>
+		<p>Kirka: <a href="https://maps.app.goo.gl/1tpEmHe7ArLRESQN7">Google maps link</a>. Obs! Det er fleire kyrkjer med navn "Haug", dette er den riktige</p>
+		<p>Hotellet: <a href="https://maps.app.goo.gl/WYEkEoEwpp7YahCG9">Goole maps link</a></p>
+		<h3>Vielse til fest</h3>
+		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YmqRsPox2KJhpVCITSsWpBGRyVcNvc0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+	</div>
+</section>
+
+<section id="RSVP" class="full-width">
+	<div class="blue">
+		<h2>Kjem du?</h2>
+		<p>Vi håpar at du vil vere med å feire. Frist for svar er ...</p>
+		<p><a href="">Svarskjema her</a></p>
+		<p>Frist: 1. mai 2025</p>
+	</div>
+</section>
+
+</body>
+</html>
+
