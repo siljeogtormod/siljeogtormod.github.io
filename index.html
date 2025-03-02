@@ -17,7 +17,7 @@
 		  box-sizing: border-box;
 		}
 		.full-width {
-			height: 100vh; /* You must set a specified height */
+			min-height: 100vh; /* You must set a specified height */
 			background-position: center; /* Center the image */
 			background-repeat: no-repeat; /* Do not repeat the image */
 			background-size: cover; /* Resize the background image to cover the entire container */
@@ -48,8 +48,9 @@
 		#Velkommen {
 			background-image: url("blom_hjorne_gjen.png");
 			background-repeat: no-repeat;
-			background-size: 35%;
+			background-size: auto 35%;
 			background-position: 100% 100%;
+			height: 100vh;
 			/* background-image: url("oss_runde.jpg"); */
 
 			/* background-size: 50hv auto !important; */
@@ -76,8 +77,8 @@
 			z-index: 50;
 			background-image: url("hjerte.png");
 			background-size: 100%;
-			height: 25em;
-			width: 25em;
+			height: 22em;
+			width: 22em;
 			top: 18vh;
 			left: 50%;
 			transform: translateX(-50%);
@@ -120,7 +121,7 @@
 			/* clip: rect(0, 100px, 200px, 0); */
 		}
 		.blue {
-			margin: 5% 0 5% 10%;
+			margin: 5% 10% 5% 10%;
 			padding: 30px;
 			background-color: rgba(255, 255, 255, 0.8);
 			display: inline-block;
@@ -200,8 +201,8 @@
 	<a href="#Festen">Festen</a>
 	<a href="#Hotellet">Hotellet</a>
 	<a href="#Program">Program</a>
-	<a href="#Gaver">Gåver</a>
-	<a href="#Reise">Reise</a>
+	<!-- <a href="#Gaver">Gåver</a> -->
+	<a href="#Praktisk">Reise</a>
 	<a href="#Kart">Kart</a>
 	<a href="#RSVP">RSVP</a>
 </nav>
@@ -228,7 +229,7 @@
 <section id="Hotellet" class="full-width">
 	<div class="blue">
 		<h2>Klækken hotell</h2>
-		<p><a href="https://www.klaekken.no/">Klækken hotell</a> ligger rett ved Digra gård der festen skal vere.</p>
+		<p><a href="https://www.klaekken.no/">Klækken hotell</a> eier Digra gård der festen skal vere. Garen ligg rett foran hotellet.</p>
 		<p>Hotellet har store utearealer med grøntområder, samt inne- og utebasseng. Så her må ein hugse badebuksa!</p>
 
 		<p>Det er statuer, stort sjakkbrett og ei lita fotballbane.</p>
@@ -272,7 +273,7 @@
 		<p>Det viktigaste for oss er at <i>du</i> kjem!</p>
 		<p>Evt. gåveliste kjem seinare</p>
 	</div>
-	 <img id="sol" src="oss_solnedgang_kvadrat.jpeg" alt="Oss">
+	 <img id="sol" src="oss_solnedgang_kvadrat_2.jpeg" alt="Oss">
 </section>
 
 <section id="Praktisk" class="full-width">
@@ -288,7 +289,7 @@
 		</ul>
 		<p>Antrekk: Kjole og dress. Gjerne bunad</p>
 
-		<p>Kirka ligg 15 min gange unna hotellet.</p>
+		<p>Kirka ligg 10 min gange unna hotellet.</p>
 	</div>
 </section>
 
@@ -298,7 +299,8 @@
 		<p>Kirka: <a href="https://maps.app.goo.gl/1tpEmHe7ArLRESQN7">Google maps link</a>. Obs! Det er fleire kyrkjer med navn "Haug", dette er den riktige</p>
 		<p>Hotellet: <a href="https://maps.app.goo.gl/WYEkEoEwpp7YahCG9">Goole maps link</a></p>
 		<h3>Vielse til fest</h3>
-		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YmqRsPox2KJhpVCITSsWpBGRyVcNvc0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+		<p>...kart kjem...</p>
+		<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YmqRsPox2KJhpVCITSsWpBGRyVcNvc0&ehbc=2E312F&noprof=1"></iframe> -->
 	</div>
 </section>
 
@@ -313,4 +315,3 @@
 
 </body>
 </html>
-
